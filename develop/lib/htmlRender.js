@@ -2,7 +2,7 @@ const path = require("path");
 
 const fs = require("fs");
 
-const templatesDir = path.resolve(__dirname, "../templates");
+const templatesDir = path.resolve(__dirname, "../src");
 
 const render = employees => {
     const html = [];
@@ -43,7 +43,7 @@ const renderEngineer = engineer => {
 
     template = replacePlaceholders(template, "id", engineer.getId());
 
-    template = replacePlaceholders(template, "github", engineer.getGitHub());
+    template = replacePlaceholders(template, "github", engineer.getGithub());
 
     return template;
 };

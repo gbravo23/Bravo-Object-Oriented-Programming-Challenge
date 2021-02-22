@@ -40,7 +40,7 @@ const createEmployee = function () {
                 name: "number",
                 message: "What is this employee's office number?",
             }]).then(response => {
-                const newManager = new Manager(answer.name, answer.id, response.number);
+                const newManager = new Manager(answer.name, answer.id, response.number, answer.email);
                 createdEmployees.push(newManager);
                 addToHtml();
             });
@@ -51,7 +51,7 @@ const createEmployee = function () {
                 name: "github",
                 message: "What is this employee's github?",
             }]).then(response => {
-                const newEngineer = new Engineer(answer.name, answer.id, response.github);
+                const newEngineer = new Engineer(answer.name, answer.id, response.github, answer.email);
                 createdEmployees.push(newEngineer);
                 addToHtml();
             });
@@ -62,7 +62,7 @@ const createEmployee = function () {
                 name: "school",
                 message: "What is this intern's school?",
             }]).then(response => {
-                const newIntern = new Intern(answer.name, answer.id, response.school);
+                const newIntern = new Intern(answer.name, answer.id, response.school, answer.email);
                 createdEmployees.push(newIntern);
                 addToHtml();
             });
