@@ -10,7 +10,7 @@ npm run test
 
 Please see the link below to a walkthrough video that demonstrates its functionality and all of the tests passing. In the video I ran the 'npm run test' command followed by the 'node index.js' command and ended with opening up the browser to show the generated HTML webpage displaying summaries for the Manager, Engineer and Intern.
 
-##Walkthrough Link:
+## Walkthrough Link:
 
 https://drive.google.com/file/d/1NIjNg1DOE6pQtLyLoEBDCIuUrvg4XjEX/view
 
